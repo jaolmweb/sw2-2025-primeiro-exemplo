@@ -1,4 +1,15 @@
-GET https://expert-space-meme-q74rv95665qph6w4w-3000.app.github.dev/api/tarefas
+@url = https://expert-space-meme-q74rv95665qph6w4w-3000.app.github.dev/api/tarefas
+
+GET {{url}}
 
 ###
-POST https://expert-space-meme-q74rv95665qph6w4w-3000.app.github.dev/api/tarefas
+POST {{url}}
+Content-Type: application/json
+
+{
+    "id": 10,
+    "title": "Executar Aplicação"
+}
+
+###
+GET {{url}}/2
